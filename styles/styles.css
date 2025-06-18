@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #83C5BE;
+    font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+}
+
+.titulo{
+    color: #FFC857;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+     font-weight: 500;
+}
+
+.logo{
+    height: 5rem;
+}
+.inicio_img{
+    height: 250px;
+}
