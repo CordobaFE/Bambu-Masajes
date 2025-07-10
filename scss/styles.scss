@@ -1,26 +1,22 @@
-@charset "UTF-8";
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use 'variables';
+@use 'reset';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat",sans-serif;
+
 }
 
-body {
+body{
   background-color: #83c5be;
 }
 
 header {
   background-color: #ffc857;
   padding: 10px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat",sans-serif;
 }
 
 .navbar {
@@ -70,27 +66,26 @@ header {
   color: #006d77;
 }
 
-.inicio_img {
-  height: 350px;
-  border-radius: 10px;
-  margin-left: 25px;
+.inicio_img{
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 25px;
 }
-
 .card-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #83c5be;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* Para que se acomoden en pantallas pequeñas */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #83c5be;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que se acomoden en pantallas pequeñas */
 }
 
 .card {
   background-color: #fff;
   border-radius: 10px;
   width: 350px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -147,68 +142,69 @@ header {
 }
 
 .info-contacto {
-  flex: 1;
-  min-width: 250px;
+    flex: 1;
+    min-width: 250px;
 }
 
 .info-contacto h5 {
-  margin: 0.5rem 0;
-  text-align: left;
+    margin: 0.5rem 0;
+    text-align: left;
 }
 
 .contacto-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .icono {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 .enlaces {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 50px;
-  flex: 1;
-  min-width: 200px;
-  text-align: right;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
 }
 
 .enlaces a {
-  display: inline-block;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  border-radius: 50%;
-  padding: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .red-icon {
-  width: 30px;
-  height: 30px;
-  display: block;
+    width: 30px;
+    height: 30px;
+    display: block;
 }
 
 .enlaces a:hover {
-  transform: scale(1.2);
-  background-color: #ecf0f1;
-  cursor: pointer;
+    transform: scale(1.2);
+    background-color: #ecf0f1;
+    cursor: pointer;
 }
 
 .derechos {
-  width: 100%;
-  text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 0.9rem;
-  color: #ecf0f1;
-  opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 0.9rem;
+    color: #ecf0f1;
+    opacity: 0.8;
 }
 
 /*Servicios*/
+
 .servicios-container {
   padding: 40px 20px;
   background-color: #83c5be;
@@ -226,7 +222,7 @@ header {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   flex-wrap: wrap;
 }
 
@@ -351,6 +347,7 @@ header {
   margin-left: 10px;
 }
 
+
 .form-group.cupon {
   display: flex;
   flex-wrap: wrap;
@@ -406,7 +403,7 @@ header {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
 }
 
@@ -447,7 +444,7 @@ header {
   background-color: #fff;
   border-radius: 8px;
   padding: 0 15px 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
@@ -490,15 +487,19 @@ header {
   overflow: hidden;
 }
 
+
+
 /*  Responsive - tablets */
 @media (max-width: 1024px) {
   .logo {
     margin-left: 20px;
   }
+
   .titulo {
     margin-left: 10px;
     font-size: 22px;
   }
+
   .nav-list {
     position: static;
     transform: none;
@@ -507,77 +508,92 @@ header {
     gap: 15px;
     margin-top: 10px;
   }
+
   .navbar {
     flex-direction: column;
     align-items: center;
   }
+
   .card-container {
     padding: 20px;
     flex-direction: column;
     align-items: center;
   }
+
   .enlaces {
     justify-content: center;
     padding-top: 30px;
   }
 }
+
 /* Responsive - celulares */
 @media (max-width: 600px) {
   .logo {
     width: 40px;
     margin-left: 0;
   }
+
   .branding {
     justify-content: center;
     text-align: center;
     flex-direction: column;
   }
+
   .titulo {
     font-size: 20px;
     margin-left: 0;
     text-align: center;
   }
+
   .navbar {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .nav-list {
     flex-direction: column;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
   }
+
   .card {
     width: 90%;
   }
+
   .pie {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .info-contacto, .enlaces {
     justify-content: center;
     text-align: center;
   }
+
   .contacto-item {
     justify-content: center;
   }
+
   .enlaces {
     flex-wrap: wrap;
     padding-top: 20px;
   }
+
   .derechos {
     font-size: 0.8rem;
     padding-top: 1rem;
   }
+  
   .form-group.doble {
     flex-direction: column;
   }
+
   .form-group.cupon {
     flex-direction: column;
     align-items: flex-start;
   }
-}
 
-/*# sourceMappingURL=styles.css.map */
+}

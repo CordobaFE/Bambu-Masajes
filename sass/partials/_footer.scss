@@ -1,0 +1,74 @@
+@use 'variables';
+
+.pie {
+  background-color: variables.$color-hover;
+  color: #ecf0f1;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.info-contacto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-contacto h5 {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.icono {
+  width: 24px;
+  height: 24px;
+}
+
+.enlaces {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+  flex: 1;
+  min-width: 200px;
+  text-align: right;
+}
+
+.enlaces a {
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.red-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.enlaces a:hover {
+  transform: scale(1.2);
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+.derechos {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+  color: #ecf0f1;
+  opacity: 0.8;
+}

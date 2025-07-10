@@ -1,0 +1,11 @@
+@use 'variables';
+
+body {
+  background-color: variables.$color-principal;
+}
+
+header {
+  background-color: variables.$color-secundario;
+  padding: 10px 20px;
+  font-family: variables.$font-principal;
+}

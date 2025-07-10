@@ -1,0 +1,65 @@
+@use 'variables';
+
+.inicio_img {
+  height: 350px;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+
+.card-container {
+  padding: 30px 0;
+  background-color: variables.$color-principal;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: variables.$color-link;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: variables.$color-boton;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
